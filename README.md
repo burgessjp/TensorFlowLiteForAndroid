@@ -16,7 +16,7 @@
     ```
     使用：
     ```html
-    classify.recognizeImage(TFBitmapUtil.getClassifyBitmap(bitmap, 224, 224));
+    classify.recognizeImage(bitmap);
     ```
 - 对象检测
 
