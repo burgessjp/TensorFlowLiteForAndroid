@@ -90,8 +90,9 @@ public class TensorFlowClassifyConfig {
             return this;
         }
 
-        public void setMaxResultCount(int maxResultCount) {
+        public Builder setMaxResultCount(int maxResultCount) {
             this.maxResultCount = maxResultCount;
+            return this;
         }
 
         public TensorFlowClassifyConfig build() {

@@ -108,8 +108,8 @@ public class TFLiteImageClassifierFloat implements Classifier {
 
     @Override
     public List<Recognition> recognizeImage(final Bitmap bitmap) {
-
-        convertBitmapToByteBuffer(bitmap);
+        Bitmap cBitmap = TFBitmapUtil.getClassifyBitmap(bitmap, config.getInputSizeX(), config.getInputSizeY());
+        convertBitmapToByteBuffer(cBitmap);
         // Run the inference call.
         tfLite.run(imgData, labelProb);
 
